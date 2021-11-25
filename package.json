@@ -11,10 +11,12 @@
     "seed": "ts-node -O {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.5",
     "@prisma/client": "^3.5.0",
     "apollo-server-micro": "^3.5.0",
     "graphql": "^15.7.2",
     "micro-cors": "^0.1.1",
+    "micro": "^9.3.4",
     "next": "11.0.1",
     "nexus": "^1.1.0",
     "react": "17.0.2",

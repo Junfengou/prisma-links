@@ -8,3 +8,5 @@ Prisma
 Apollo client
     Query layer that's able to fetch data with GraphQL
     Apollo Studio (replaced Apollo Playground) is a browser based API testing tool use to run query/mutation operations
+
+
