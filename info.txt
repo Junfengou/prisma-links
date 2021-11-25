@@ -1,0 +1,10 @@
+Next js 
+    React framework
+    Provide things like folder structure, hot reloading, server side rendering support, easy to integrate with prisma
+
+Prisma
+    ORM layer that interact with the database 
+
+Apollo client
+    Query layer that's able to fetch data with GraphQL
+    Apollo Studio (replaced Apollo Playground) is a browser based API testing tool use to run query/mutation operations
