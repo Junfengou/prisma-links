@@ -68,6 +68,7 @@ export default function Home() {
             onClick={() => {
               fetchMore({
                 variables: { after: endCursor},
+                // Not sure why there is error here but it work
                 updateQuery: (prevResult, {fetchMoreResult}) => {
                   fetchMoreResult.links.edges = [
                     ...prevResult.links.edges,
