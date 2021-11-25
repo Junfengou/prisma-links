@@ -1,4 +1,4 @@
-import { objectType, extendType, intArg, stringArg } from "nexus"
+import { objectType, extendType, intArg, stringArg, nonNull } from "nexus"
 import { User } from "./User";
 
 // This is called "Code First Approach"
@@ -147,3 +147,22 @@ export const LinksQuery = extendType({
       });
     },
   });
+
+  export const LinkByIDQuery = extendType({
+    type: 'Query',
+    definition(t) {
+      t.nonNull.field('link', {
+        type: 'Link',
+        args: { id: nonNull(stringArg()) },
+        resolve(_parent, args, ctx) {
+          const link = ctx.prisma.link.findUnique({
+            where: {
+              id: args.id,
+            },
+          });
+          return link;
+        },
+      });
+    },
+  });
+  
