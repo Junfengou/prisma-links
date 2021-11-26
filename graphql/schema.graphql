@@ -12,6 +12,7 @@ type Link {
   description: String
   id: String
   imageUrl: String
+  index: Int
   title: String
   url: String
   users: [User]

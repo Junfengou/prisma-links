@@ -12,6 +12,7 @@ export const Link = objectType({
     definition(t) {
         t.string('id');
         t.string('title');
+        t.int('index');
         t.string('url');
         t.string('description');
         t.string('imageUrl');
